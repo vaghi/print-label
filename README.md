@@ -22,12 +22,14 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Assumptions
 - All fields except Apt / Suite are mandatory.
+- For simplicity, the user will not have the ability to choose between multiple rate options.
 - For only accept addresses in the United States I used a US validation on the zip code, and restricted the state to US states.
 - No validation on real street address.
 - No validation on real city.
 - Just listed some states for simplicity.
 
 ## What I’d do next
+- Add feature to allow user pick between all possible rate options, returned on the first api call.
 - Improve overall design.
 - Enable "Create Label" button always; focus with red color and label, and scroll to uncompleted or invalid mandatory fields.
 - Add light/dark mode support.

@@ -1,6 +1,4 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
 
   --text-primary: #000;
   --text-secondary: #666;
@@ -26,7 +24,7 @@
   align-items: flex-start;
   justify-content: space-between;
   background-color: var(--foreground);
-  padding: 120px 60px;
+  padding: 60px 60px 30px 60px;
 }
 
 .intro {
@@ -128,9 +126,6 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
-
     --text-primary: #ededed;
     --text-secondary: #999;
 

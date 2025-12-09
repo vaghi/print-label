@@ -1,0 +1,48 @@
+@use '../../../styles/colors' as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $text-main;
+    margin-bottom: 0.5rem;
+}
+
+.select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid $input-border;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: $text-main;
+    background-color: $input-bg;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+
+    &:hover {
+        border-color: darken($input-border, 10%);
+    }
+    
+    &:focus {
+        outline: none;
+        border-color: $input-focus;
+        box-shadow: 0 0 0 3px rgba($input-focus, 0.1);
+    }
+}
+
+.errorText {
+    color: $error;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
